@@ -1,0 +1,22 @@
+{
+	"name": "Zero Distractions",
+	"version": "1.0",
+	"icons": {"128": "images/bear_icon2.png"},
+	"manifest_version": 2,
+	"description" :"Only lazy people distract themselves",
+	"browser_action": {
+		"default_icon": "images/bear_icon3.png",
+		"default_popup": "html/popup.html",
+		"default_title": "How can I help?"
+	},
+
+	"background": {
+		"scripts": ["js/background.js"],
+		"persistent": false
+	},
+	"permissions": [
+		"webNavigation",
+	  	"tabs",
+	  	"storage"
+	  ] 
+}
